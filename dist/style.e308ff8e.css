@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  background-color: #a2d2ff;
+  font-family: sans-serif;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: flex-start;
+  background-color: #fde3a0;
+  border: 5px solid #ff70a6;
+  width: 450px;
+  height: auto;
+  margin: 0px auto;
+  border-radius: 5px;
+  margin-top: 50px;
+  padding: 20px;
+}
+.shopList {
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  border: 2px solid #ff70a6;
+}
+.shopList > input {
+  background: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  color: #6d23b6;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.shopList > input::placeholder {
+  color: #ceb2e9;
+}
+.shopList > button {
+  border: none;
+  cursor: pointer;
+  color: #6d23b6;
+  font-size: 20px;
+  border-left: 2px solid #ff70a6;
+  font-weight: bolder;
+  background-color: whitesmoke;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: inherit;
+  height: auto;
+  color: inherit;
+  font-weight: bolder;
+  color: #6d23b6;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: 15px;
+}
+.items .item {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  align-items: flex-start;
+  background-color: #fde3a0;
+  width: 150px;
+  border-bottom: 1px solid #bb87ec;
+  padding-top: 5px;
+
+}
+.item button {
+  border: none;
+  text-align: center;
+  background-color: #fde3a0;
+  color: #ff70a6;
+  border-radius: 2px;
+  margin-left: 10px;
+  font-weight: bolder;
+  margin-left: auto;
+}
+.item button:hover {
+  background-color: #70d6ff;
+  cursor: pointer;
+  color: white;
+}
+.item span {
+  background-color: #fde3a0;
+}
+#deleteBtn{
+  margin-top: auto;
+  background-color: red;
+  border: none;
+  outline: none;
+  padding:10px;
+  border-radius: 5px;
+  font-weight: bolder;
+  color: #ffffff;
+  cursor: pointer;
+}
+#deleteBtn:hover{
+  background-color: #ff70a6;
+}
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
