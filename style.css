@@ -1,14 +1,15 @@
 :root {
-  --color-main: #9a8c98;
-  --color-border-light:#f2e9e4;
-  --color-hover:#9e857f;
-  --color-border-medium:#c9ada7;
+  --color-main: hsl(182, 25%, 50%, 0.1);
+  --color-border-light: #f2e9e4;
+  --color-hover: #9e857f;
+  --color-border-medium: #c9ada7;
 }
 body {
   min-height: 100vh;
   display: grid;
   align-items: start;
   justify-items: center;
+  color: #b1a8a3;
 }
 
 /* Shopping Form */
@@ -18,9 +19,16 @@ body {
   grid-gap: 20px;
 }
 .shopping #item {
-  border-radius: 5px;
+  border: none;
+  outline: none;
+  background: none;
+  appearance: none;
+  color: #b1a8a3;
+  border-bottom: 1px solid #2a9d8f;
 }
-
+.shopping #item:focus {
+  background-color: rgba(96, 157, 159, 0.158);
+}
 .shopping-list {
   background: var(--color-main);
   padding: 3rem;
@@ -43,14 +51,13 @@ body {
   opacity: 0.5;
 }
 .shopping-list button {
-  border: 2px solid var(--color-border-light);
   border-radius: 5px;
   transition: transform 0.2s;
 }
 .shopping-list button:hover {
   cursor: pointer;
-  background-color: var(--color-hover);
   transform: scale(1.05);
+  transition: 0.2s ease-in-out;
 }
 
 .list li {
@@ -59,7 +66,8 @@ body {
   justify-content: space-between;
   align-items: center;
   text-align: left;
-  border: 1px solid var(--color-border-medium);
+  border: 1px solid #2a9d8f;
+  background: none;
 }
 .list li button {
   display: flex;
